@@ -1,7 +1,9 @@
-from turtle import Turtle, Screen
+import turtle as t
 import random
 
-tim = Turtle()
+t.colormode(255)
+
+tim = t.Turtle()
 tim.shape("turtle")
 tim.color("green")
 
@@ -15,5 +17,5 @@ for side_number in range (3, 11):
     tim.color(random.random(), random.random(), random.random())
     draw_shape(side_number)
 
-screen = Screen()
+screen = t.Screen()
 screen.exitonclick()
